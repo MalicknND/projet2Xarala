@@ -439,6 +439,7 @@ footer h1
         flex-direction: column;
         height: auto;
         margin: 0;
+        padding: 35px;
     }
     #skills h1
     {
