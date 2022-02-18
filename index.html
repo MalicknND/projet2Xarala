@@ -156,15 +156,22 @@
 <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "45%";
-      document.getElementById("main").style.marginLeft = "45%";
+      document.getElementById("main").style.left = "250px";
     }
-    
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("main").style.left= "-250px";
     }
-
+    const links = document.querySelectorAll("#mySidenav a");
+    links.forEach((link) => {
+    link.addEventListener("click", () => {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.left = "-250px";
+    });
+    });
     </script>
+
+</script>
     
 </body>
 </html>

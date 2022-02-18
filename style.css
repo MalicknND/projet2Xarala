@@ -514,6 +514,7 @@ footer h1
     #main
     {
     display: block;
+    margin-left: 100px;
     }
 
     form
